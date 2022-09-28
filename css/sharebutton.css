@@ -62,6 +62,19 @@ a {
     transition-delay: var(--d);
 }
 
+
+.wrapper.active .item:nth-child(4) {
+    transform: translateX(390px);
+}
+
+.wrapper.active .item:nth-child(5) {
+    transform: translateX(325px);
+}
+
+.wrapper.active .item:nth-child(6) {
+    transform: translateX(260px);
+}
+
 .wrapper.active .item:nth-child(1) {
     transform: translateX(195px);
 }
@@ -87,10 +100,16 @@ a {
 }
 
 .tw:hover {
-    background-color: #1DA1F2;
+    background-image: radial-gradient(circle at 30% 107%,
+            #fd5949 0%, #d6249f 5%,
+            #285AEB 45%, #fdf497 60%,
+            #fdf497 90%);
 }
 
 .sc:hover {
-    background-color: #FFFC00;
+    background-image: radial-gradient(circle at 30% 107%,
+            #fdf497 5%, #fdf497 45%,
+            #fd5949 60%, #d6249f 90%,
+            #285AEB 0%);
     color: inherit;
 }
